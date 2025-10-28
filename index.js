@@ -4,8 +4,23 @@ const Parser = require('rss-parser');
 
 async function fetchBlogPosts() {
   try {
-    const parser = new Parser();
+    const parser = new Parser({
+      customFields: {
+        item: ['pubDate', 'link', 'title']
+      },
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+        'Accept': 'application/rss+xml, application/xml, text/xml, */*',
+        'Accept-Language': 'en-US,en;q=0.9',
+        'Cache-Control': 'no-cache',
+        'Pragma': 'no-cache'
+      },
+      timeout: 10000
+    });
+    
     const feed = await parser.parseURL('https://duthaho.substack.com/feed');
+    
+    console.log(`Successfully fetched ${feed.items.length} blog posts`);
     
     return feed.items.slice(0, 6).map(item => ({
       title: item.title,
@@ -20,7 +35,7 @@ async function fetchBlogPosts() {
     console.error('Error fetching blog posts:', error);
     return [
       {
-        title: 'Visit my Substack for latest posts',
+        title: '📚 Visit my Substack for latest posts',
         link: 'https://duthaho.substack.com',
         pubDate: new Date().toLocaleDateString('en-US', {
           month: 'short',
