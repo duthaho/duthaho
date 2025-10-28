@@ -47,7 +47,7 @@ I'm a Solution Architect and Full-Stack Developer based in **Da Nang, Vietnam** 
 
 ### 📝 Latest Blog Posts
 
-* [Visit my Substack for latest posts](https:&#x2F;&#x2F;duthaho.substack.com) - *Oct 28, 2025*
+* [📚 Visit my Substack for latest posts](https:&#x2F;&#x2F;duthaho.substack.com) - *Oct 28, 2025*
 
 ### 🌐 Connect With Me
 
@@ -77,7 +77,7 @@ I'm a Solution Architect and Full-Stack Developer based in **Da Nang, Vietnam** 
 
 <p align="center">
   <i>This README automatically updates daily!</i><br>
-  <b>Last refresh:</b> Tuesday, October 28 at 05:40 PM (Vietnam Time)
+  <b>Last refresh:</b> Tuesday, October 28 at 05:48 PM (Vietnam Time)
 </p>
 
 <p align="center">
