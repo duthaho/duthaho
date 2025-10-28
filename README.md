@@ -34,20 +34,17 @@ I'm a Solution Architect and Full-Stack Developer based in **Da Nang, Vietnam** 
 </p>
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-streak-stats.herokuapp.com/?user=duthaho&theme=radical&hide_border=true" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-streak-stats.herokuapp.com/?user=duthaho&theme=light&hide_border=true" />
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=duthaho&theme=radical" alt="GitHub Streak" />
-  </picture>
-</p>
-
-<p align="center">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=duthaho&layout=compact&theme=radical" alt="Top Languages" />
 </p>
 
 ### 📝 Latest Blog Posts
 
-* [📚 Visit my Substack for latest posts](https:&#x2F;&#x2F;duthaho.substack.com) - *Oct 28, 2025*
+* [Giải mã MySQL: Page&#x2F;Block](https:&#x2F;&#x2F;duthaho.substack.com&#x2F;p&#x2F;giai-ma-mysql-pageblock) - *Oct 23, 2025*
+* [Tôi đi phỏng vấn: bài toán Bulk Download](https:&#x2F;&#x2F;duthaho.substack.com&#x2F;p&#x2F;toi-i-phong-van-bai-toan-bulk-download) - *Oct 22, 2025*
+* [Tôi đi phỏng vấn: bài toán Unique ID](https:&#x2F;&#x2F;duthaho.substack.com&#x2F;p&#x2F;toi-i-phong-van-bai-toan-unique-id) - *Sep 5, 2025*
+* [Tôi đi phỏng vấn: bài toán Soft Delete](https:&#x2F;&#x2F;duthaho.substack.com&#x2F;p&#x2F;toi-i-phong-van-system-design-ve) - *Aug 27, 2025*
+* [Understanding the B+ Tree in InnoDB: The Backbone of MySQL Performance](https:&#x2F;&#x2F;duthaho.substack.com&#x2F;p&#x2F;understanding-the-b-tree-in-innodb) - *Aug 27, 2025*
+* [Understanding MySQL InnoDB Pages: The Backbone of Database Performance](https:&#x2F;&#x2F;duthaho.substack.com&#x2F;p&#x2F;understanding-mysql-innodb-pages) - *Aug 27, 2025*
 
 ### 🌐 Connect With Me
 
@@ -77,7 +74,7 @@ I'm a Solution Architect and Full-Stack Developer based in **Da Nang, Vietnam** 
 
 <p align="center">
   <i>This README automatically updates daily!</i><br>
-  <b>Last refresh:</b> Tuesday, October 28 at 05:48 PM (Vietnam Time)
+  <b>Last refresh:</b> Tuesday, October 28 at 05:52 PM (Vietnam Time)
 </p>
 
 <p align="center">
