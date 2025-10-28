@@ -1,51 +1,21 @@
 const fs = require('fs');
 const Mustache = require('mustache');
-const fetch = require('node-fetch');
+const Parser = require('rss-parser');
 
 async function fetchBlogPosts() {
   try {
-    const response = await fetch('https://duthaho.substack.com/feed');
-    const text = await response.text();
+    const parser = new Parser();
+    const feed = await parser.parseURL('https://duthaho.substack.com/feed');
     
-    // Use regex to parse RSS instead of XML parser to avoid encoding issues
-    const items = [];
-    const itemRegex = /<item>([\s\S]*?)<\/item>/g;
-    const titleRegex = /<title><!\[CDATA\[(.*?)\]\]><\/title>/;
-    const linkRegex = /<link>(.*?)<\/link>/;
-    const pubDateRegex = /<pubDate>(.*?)<\/pubDate>/;
-    
-    let match;
-    while ((match = itemRegex.exec(text)) !== null && items.length < 6) {
-      const itemContent = match[1];
-      
-      const titleMatch = itemContent.match(titleRegex);
-      const linkMatch = itemContent.match(linkRegex);
-      const pubDateMatch = itemContent.match(pubDateRegex);
-      
-      if (titleMatch && linkMatch && pubDateMatch) {
-        items.push({
-          title: titleMatch[1].trim(),
-          link: linkMatch[1].trim(),
-          pubDate: new Date(pubDateMatch[1]).toLocaleDateString('en-US', {
-            month: 'short',
-            day: 'numeric',
-            year: 'numeric'
-          })
-        });
-      }
-    }
-    
-    return items.length > 0 ? items : [
-      {
-        title: 'Visit my Substack for latest posts',
-        link: 'https://duthaho.substack.com',
-        pubDate: new Date().toLocaleDateString('en-US', {
-          month: 'short',
-          day: 'numeric',
-          year: 'numeric'
-        })
-      }
-    ];
+    return feed.items.slice(0, 6).map(item => ({
+      title: item.title,
+      link: item.link,
+      pubDate: new Date(item.pubDate).toLocaleDateString('en-US', {
+        month: 'short',
+        day: 'numeric',
+        year: 'numeric'
+      })
+    }));
   } catch (error) {
     console.error('Error fetching blog posts:', error);
     return [
