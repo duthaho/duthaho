@@ -7,8 +7,6 @@
     "build": "node index.js"
   },
   "dependencies": {
-    "mustache": "^4.2.0",
-    "node-fetch": "^2.6.7",
-    "rss-parser": "^3.13.0"
+    "mustache": "^4.2.0"
   }
 }

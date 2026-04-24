@@ -1,82 +1,33 @@
-# Hi there, I'm Duong Thanh Hop (DUTHAHO) 👋
+# Duong Thanh Hop
 
-## 🚀 Solution Architect @ [Paradox.ai](https://paradox.ai)
+**Solution Architect** at [Paradox.ai](https://paradox.ai) — Da Nang, Vietnam.
 
-I'm a Solution Architect and Full-Stack Developer based in **Da Nang, Vietnam** with nearly a decade of experience in software development. My journey began with gaming development and evolved into professional web development since early 2018.
+I architect AI-powered recruitment systems handling **1M+ daily conversations**, lead the migration from monolith to microservices, and write about engineering trade-offs at [duthaho.dev](https://duthaho.dev).
 
-### 💼 What I Do
-
-- 🏗️ Design and architect scalable solutions at Paradox.ai
-- 🌐 Build modern web applications with Python and JavaScript
-- 🔧 Contribute to open-source projects
-- 📝 Share knowledge through technical writing
-
-### 🛠️ Tech Stack
-
-**Languages & Frameworks:**
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Vue.js](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D)
-![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-
-**Currently Focusing On:**
-- Cloud Architecture & Solutions Design
-- Python & JavaScript Ecosystems
-- Modern Web Technologies
-
-### 📊 GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=duthaho&show_icons=true&theme=radical&count_private=true" alt="GitHub Stats" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=duthaho&layout=compact&theme=radical" alt="Top Languages" />
-</p>
-
-### 📝 Latest Blog Posts
-
-* [Giải mã MySQL: Page&#x2F;Block](https:&#x2F;&#x2F;duthaho.substack.com&#x2F;p&#x2F;giai-ma-mysql-pageblock) - *Oct 23, 2025*
-* [Tôi đi phỏng vấn: bài toán Bulk Download](https:&#x2F;&#x2F;duthaho.substack.com&#x2F;p&#x2F;toi-i-phong-van-bai-toan-bulk-download) - *Oct 22, 2025*
-* [Tôi đi phỏng vấn: bài toán Unique ID](https:&#x2F;&#x2F;duthaho.substack.com&#x2F;p&#x2F;toi-i-phong-van-bai-toan-unique-id) - *Sep 5, 2025*
-* [Tôi đi phỏng vấn: bài toán Soft Delete](https:&#x2F;&#x2F;duthaho.substack.com&#x2F;p&#x2F;toi-i-phong-van-system-design-ve) - *Aug 27, 2025*
-* [Understanding the B+ Tree in InnoDB: The Backbone of MySQL Performance](https:&#x2F;&#x2F;duthaho.substack.com&#x2F;p&#x2F;understanding-the-b-tree-in-innodb) - *Aug 27, 2025*
-* [Understanding MySQL InnoDB Pages: The Backbone of Database Performance](https:&#x2F;&#x2F;duthaho.substack.com&#x2F;p&#x2F;understanding-mysql-innodb-pages) - *Aug 27, 2025*
-
-### 🌐 Connect With Me
-
-<p align="center">
-  <a href="https://duthaho.substack.com">
-    <img src="https://img.shields.io/badge/Substack-FF6719?style=for-the-badge&logo=substack&logoColor=white" alt="Substack" />
-  </a>
-  <a href="https://www.duthaho.dev">
-    <img src="https://img.shields.io/badge/Blog-duthaho.dev-blue?style=for-the-badge&logo=wordpress&logoColor=white" alt="Blog" />
-  </a>
-  <a href="https://www.facebook.com/DuongThanhHop/">
-    <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook" />
-  </a>
-  <a href="https://www.linkedin.com/in/duthaho">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  <a href="https://github.com/duthaho">
-    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-  </a>
-</p>
+Core stack: Python · Django · FastAPI · Vue · MySQL · AWS · Kubernetes.
 
 ---
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=duthaho&label=Profile%20views&color=0e75b6&style=flat" alt="Profile views" />
+### Writing
+
+- [Karpathy vừa mô tả đúng thứ tôi đã thất bại khi xây — và lý do tôi sẽ thử lại](https:&#x2F;&#x2F;duthaho.dev&#x2F;llm-wiki.html) — *Apr 16, 2026*
+- [Claude không đếm tin nhắn — nó đếm token. Và tôi đã dùng sai từ đầu.](https:&#x2F;&#x2F;duthaho.dev&#x2F;claude-token-habits.html) — *Apr 15, 2026*
+- [Hai dòng code ẩn khiến Claude Code ngốn token gấp bốn lần](https:&#x2F;&#x2F;duthaho.dev&#x2F;claude-code-token-drain.html) — *Apr 2, 2026*
+- [AI không phải phép màu — nhưng ai đó đang cố làm bạn quên điều đó](https:&#x2F;&#x2F;duthaho.dev&#x2F;ai-hype.html) — *Apr 1, 2026*
+- [Claude không biết mình đang nghĩ gì — và điều đó đáng lo hơn bạn nghĩ](https:&#x2F;&#x2F;duthaho.dev&#x2F;claude-interpretability.html) — *Mar 25, 2026*
+- [RAG thông thường đang nói dối bạn — và bạn chưa nhận ra](https:&#x2F;&#x2F;duthaho.dev&#x2F;agentic-rag.html) — *Mar 18, 2026*
+
+More at [duthaho.dev](https://duthaho.dev).
+
+### GitHub
+
+<p>
+  <img src="https://github-readme-stats.vercel.app/api?username=duthaho&show_icons=true&hide_border=true&hide_title=true&theme=transparent&count_private=true" alt="GitHub stats" height="140" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=duthaho&layout=compact&hide_border=true&theme=transparent" alt="Top languages" height="140" />
 </p>
 
-<p align="center">
-  <i>This README automatically updates daily!</i><br>
-  <b>Last refresh:</b> Tuesday, October 28 at 05:52 PM (Vietnam Time)
-</p>
+### Elsewhere
 
-<p align="center">
-  <img src="https://github.com/duthaho/duthaho/workflows/Build%20README/badge.svg" alt="Build Status" />
-</p>
+[Blog](https://duthaho.dev) · [LinkedIn](https://www.linkedin.com/in/duthaho) · [Substack](https://duthaho.substack.com) · [GitHub](https://github.com/duthaho)
+
+<sub>README auto-refreshed Friday, April 24 at 08:10 PM (ICT) · [source](https://github.com/duthaho/duthaho/blob/main/main.mustache)</sub>

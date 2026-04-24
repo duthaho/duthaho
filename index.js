@@ -1,55 +1,65 @@
 const fs = require('fs');
 const Mustache = require('mustache');
-const Parser = require('rss-parser');
+
+const BLOG_URL = 'https://duthaho.dev/';
+const POST_LIMIT = 6;
+
+const ENTITIES = { '&amp;': '&', '&lt;': '<', '&gt;': '>', '&quot;': '"', '&#39;': "'", '&apos;': "'" };
+const decode = s => s.replace(/&(amp|lt|gt|quot|#39|apos);/g, m => ENTITIES[m]);
+const stripTags = s => decode(s.replace(/<[^>]+>/g, '')).replace(/\s+/g, ' ').trim();
+
+function formatDate(ddmmyyyy) {
+  const [d, m, y] = ddmmyyyy.split('/').map(Number);
+  return new Date(Date.UTC(y, m - 1, d)).toLocaleDateString('en-US', {
+    month: 'short',
+    day: 'numeric',
+    year: 'numeric',
+    timeZone: 'UTC',
+  });
+}
 
 async function fetchBlogPosts() {
   try {
-    const parser = new Parser({
-      customFields: {
-        item: ['pubDate', 'link', 'title']
-      },
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
-        'Accept': 'application/rss+xml, application/xml, text/xml, */*',
-        'Accept-Language': 'en-US,en;q=0.9',
-        'Cache-Control': 'no-cache',
-        'Pragma': 'no-cache'
-      },
-      timeout: 10000
+    const res = await fetch(BLOG_URL, {
+      headers: { 'User-Agent': 'duthaho-profile-readme' },
     });
-    
-    const feed = await parser.parseURL('https://duthaho.substack.com/feed');
-    
-    console.log(`Successfully fetched ${feed.items.length} blog posts`);
-    
-    return feed.items.slice(0, 6).map(item => ({
-      title: item.title,
-      link: item.link,
-      pubDate: new Date(item.pubDate).toLocaleDateString('en-US', {
-        month: 'short',
-        day: 'numeric',
-        year: 'numeric'
-      })
-    }));
+    if (!res.ok) throw new Error(`Blog fetch ${res.status}`);
+    const html = await res.text();
+
+    const cardRe = /<a\s+class="[^"]*\bpost-card\b[^"]*"\s+href="([^"]+)"[\s\S]*?<span class="terminal-status">([^<]+)<\/span>[\s\S]*?<div class="post-title">([\s\S]*?)<\/div>/g;
+
+    const posts = [];
+    for (const m of html.matchAll(cardRe)) {
+      posts.push({
+        title: stripTags(m[3]),
+        link: new URL(m[1], BLOG_URL).href,
+        pubDate: formatDate(m[2].trim()),
+      });
+      if (posts.length >= POST_LIMIT) break;
+    }
+    if (posts.length === 0) throw new Error('No post cards parsed — blog template may have changed');
+
+    console.log(`Successfully fetched ${posts.length} blog posts`);
+    return posts;
   } catch (error) {
     console.error('Error fetching blog posts:', error);
     return [
       {
-        title: '📚 Visit my Substack for latest posts',
-        link: 'https://duthaho.substack.com',
+        title: 'Visit my blog for latest posts',
+        link: 'https://duthaho.dev',
         pubDate: new Date().toLocaleDateString('en-US', {
           month: 'short',
           day: 'numeric',
-          year: 'numeric'
-        })
-      }
+          year: 'numeric',
+        }),
+      },
     ];
   }
 }
 
 async function generateReadme() {
   const template = fs.readFileSync('main.mustache', 'utf-8');
-  
+
   const data = {
     date: new Date().toLocaleDateString('en-US', {
       weekday: 'long',
@@ -58,7 +68,7 @@ async function generateReadme() {
       year: 'numeric',
       hour: '2-digit',
       minute: '2-digit',
-      timeZoneName: 'short'
+      timeZoneName: 'short',
     }),
     blogPosts: await fetchBlogPosts(),
     refresh_date: new Date().toLocaleString('en-US', {
@@ -67,8 +77,8 @@ async function generateReadme() {
       month: 'long',
       hour: '2-digit',
       minute: '2-digit',
-      timeZone: 'Asia/Ho_Chi_Minh'
-    })
+      timeZone: 'Asia/Ho_Chi_Minh',
+    }),
   };
 
   const output = Mustache.render(template, data);
