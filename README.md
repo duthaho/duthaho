@@ -10,12 +10,12 @@ Core stack: Python · Django · FastAPI · Vue · MySQL · AWS · Kubernetes.
 
 ### Writing
 
+- [Tôi đọc source code bị leak của Claude Code — và nhận ra mình đang build agent sai từ đầu](https:&#x2F;&#x2F;duthaho.dev&#x2F;agentic-patterns.html) — *Apr 25, 2026*
 - [Karpathy vừa mô tả đúng thứ tôi đã thất bại khi xây — và lý do tôi sẽ thử lại](https:&#x2F;&#x2F;duthaho.dev&#x2F;llm-wiki.html) — *Apr 16, 2026*
 - [Claude không đếm tin nhắn — nó đếm token. Và tôi đã dùng sai từ đầu.](https:&#x2F;&#x2F;duthaho.dev&#x2F;claude-token-habits.html) — *Apr 15, 2026*
-- [Hai dòng code ẩn khiến Claude Code ngốn token gấp bốn lần](https:&#x2F;&#x2F;duthaho.dev&#x2F;claude-code-token-drain.html) — *Apr 2, 2026*
-- [AI không phải phép màu — nhưng ai đó đang cố làm bạn quên điều đó](https:&#x2F;&#x2F;duthaho.dev&#x2F;ai-hype.html) — *Apr 1, 2026*
-- [Claude không biết mình đang nghĩ gì — và điều đó đáng lo hơn bạn nghĩ](https:&#x2F;&#x2F;duthaho.dev&#x2F;claude-interpretability.html) — *Mar 25, 2026*
-- [RAG thông thường đang nói dối bạn — và bạn chưa nhận ra](https:&#x2F;&#x2F;duthaho.dev&#x2F;agentic-rag.html) — *Mar 18, 2026*
+- [Hai dòng code ẩn khiến Claude Code ngốn token gấp 4 lần — và cái kết không ai ngờ](https:&#x2F;&#x2F;duthaho.dev&#x2F;claude-code-token-drain.html) — *Apr 2, 2026*
+- [AI không phải phép màu — nhưng bạn đang bị ai đó cố tình làm bạn quên điều đó](https:&#x2F;&#x2F;duthaho.dev&#x2F;ai-hype.html) — *Apr 1, 2026*
+- [Claude không biết mình đang nghĩ gì — và điều đó đáng lo ngại hơn bạn nghĩ](https:&#x2F;&#x2F;duthaho.dev&#x2F;claude-interpretability.html) — *Mar 25, 2026*
 
 More at [duthaho.dev](https://duthaho.dev).
 
@@ -30,4 +30,4 @@ More at [duthaho.dev](https://duthaho.dev).
 
 [Blog](https://duthaho.dev) · [LinkedIn](https://www.linkedin.com/in/duthaho) · [Substack](https://duthaho.substack.com) · [GitHub](https://github.com/duthaho)
 
-<sub>README auto-refreshed Friday, April 24 at 08:16 PM (ICT) · [source](https://github.com/duthaho/duthaho/blob/main/main.mustache)</sub>
+<sub>README auto-refreshed Saturday, April 25 at 05:27 PM (ICT) · [source](https://github.com/duthaho/duthaho/blob/main/main.mustache)</sub>

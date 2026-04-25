@@ -2,59 +2,45 @@ const fs = require('fs');
 const Mustache = require('mustache');
 
 const BLOG_URL = 'https://duthaho.dev/';
+const FEED_URL = new URL('feed.xml', BLOG_URL).href;
 const POST_LIMIT = 6;
 
 const ENTITIES = { '&amp;': '&', '&lt;': '<', '&gt;': '>', '&quot;': '"', '&#39;': "'", '&apos;': "'" };
 const decode = s => s.replace(/&(amp|lt|gt|quot|#39|apos);/g, m => ENTITIES[m]);
 const stripTags = s => decode(s.replace(/<[^>]+>/g, '')).replace(/\s+/g, ' ').trim();
 
-function formatDate(ddmmyyyy) {
-  const [d, m, y] = ddmmyyyy.split('/').map(Number);
-  return new Date(Date.UTC(y, m - 1, d)).toLocaleDateString('en-US', {
-    month: 'short',
-    day: 'numeric',
-    year: 'numeric',
-    timeZone: 'UTC',
-  });
-}
+const DATE_FMT = { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'Asia/Ho_Chi_Minh' };
 
 async function fetchBlogPosts() {
-  try {
-    const res = await fetch(BLOG_URL, {
-      headers: { 'User-Agent': 'duthaho-profile-readme' },
-    });
-    if (!res.ok) throw new Error(`Blog fetch ${res.status}`);
-    const html = await res.text();
+  const res = await fetch(FEED_URL, {
+    headers: { 'User-Agent': 'duthaho-profile-readme' },
+  });
+  if (!res.ok) throw new Error(`Feed fetch ${res.status}`);
+  const xml = await res.text();
 
-    const cardRe = /<a\s+class="[^"]*\bpost-card\b[^"]*"\s+href="([^"]+)"[\s\S]*?<span class="terminal-status">([^<]+)<\/span>[\s\S]*?<div class="post-title">([\s\S]*?)<\/div>/g;
+  const itemRe = /<item>([\s\S]*?)<\/item>/g;
+  const field = (block, tag) => block.match(new RegExp(`<${tag}>([\\s\\S]*?)<\\/${tag}>`))?.[1];
 
-    const posts = [];
-    for (const m of html.matchAll(cardRe)) {
-      posts.push({
-        title: stripTags(m[3]),
-        link: new URL(m[1], BLOG_URL).href,
-        pubDate: formatDate(m[2].trim()),
-      });
-      if (posts.length >= POST_LIMIT) break;
+  const posts = [];
+  for (const m of xml.matchAll(itemRe)) {
+    const block = m[1];
+    const title = field(block, 'title');
+    const link = field(block, 'link');
+    const pubDate = field(block, 'pubDate');
+    if (!title || !link || !pubDate) {
+      throw new Error('Feed item missing required field (title/link/pubDate)');
     }
-    if (posts.length === 0) throw new Error('No post cards parsed — blog template may have changed');
-
-    console.log(`Successfully fetched ${posts.length} blog posts`);
-    return posts;
-  } catch (error) {
-    console.error('Error fetching blog posts:', error);
-    return [
-      {
-        title: 'Visit my blog for latest posts',
-        link: 'https://duthaho.dev',
-        pubDate: new Date().toLocaleDateString('en-US', {
-          month: 'short',
-          day: 'numeric',
-          year: 'numeric',
-        }),
-      },
-    ];
+    posts.push({
+      title: stripTags(title),
+      link: stripTags(link),
+      pubDate: new Date(pubDate).toLocaleDateString('en-US', DATE_FMT),
+    });
+    if (posts.length >= POST_LIMIT) break;
   }
+  if (posts.length === 0) throw new Error('No items found in feed');
+
+  console.log(`Successfully fetched ${posts.length} blog posts`);
+  return posts;
 }
 
 async function generateReadme() {
