@@ -24,12 +24,12 @@ I architect AI-powered recruitment systems handling **1M+ daily conversations**,
 
 ### Recent writing
 
-- [Tôi đọc source code bị leak của Claude Code — và nhận ra mình đang build agent sai từ đầu](https://duthaho.dev/agentic-patterns.html) <sub>· Apr 25, 2026</sub>
-- [Karpathy vừa mô tả đúng thứ tôi đã thất bại khi xây — và lý do tôi sẽ thử lại](https://duthaho.dev/llm-wiki.html) <sub>· Apr 16, 2026</sub>
-- [Claude không đếm tin nhắn — nó đếm token. Và tôi đã dùng sai từ đầu.](https://duthaho.dev/claude-token-habits.html) <sub>· Apr 15, 2026</sub>
-- [Hai dòng code ẩn khiến Claude Code ngốn token gấp 4 lần — và cái kết không ai ngờ](https://duthaho.dev/claude-code-token-drain.html) <sub>· Apr 2, 2026</sub>
-- [AI không phải phép màu — nhưng bạn đang bị ai đó cố tình làm bạn quên điều đó](https://duthaho.dev/ai-hype.html) <sub>· Apr 1, 2026</sub>
-- [Claude không biết mình đang nghĩ gì — và điều đó đáng lo ngại hơn bạn nghĩ](https://duthaho.dev/claude-interpretability.html) <sub>· Mar 25, 2026</sub>
+- [Tôi đọc source code bị leak của Claude Code — và nhận ra mình đang build agent sai từ đầu](https:&#x2F;&#x2F;duthaho.dev&#x2F;agentic-patterns.html) <sub>· Apr 25, 2026</sub>
+- [Karpathy vừa mô tả đúng thứ tôi đã thất bại khi xây — và lý do tôi sẽ thử lại](https:&#x2F;&#x2F;duthaho.dev&#x2F;llm-wiki.html) <sub>· Apr 16, 2026</sub>
+- [Claude không đếm tin nhắn — nó đếm token. Và tôi đã dùng sai từ đầu.](https:&#x2F;&#x2F;duthaho.dev&#x2F;claude-token-habits.html) <sub>· Apr 15, 2026</sub>
+- [Hai dòng code ẩn khiến Claude Code ngốn token gấp 4 lần — và cái kết không ai ngờ](https:&#x2F;&#x2F;duthaho.dev&#x2F;claude-code-token-drain.html) <sub>· Apr 2, 2026</sub>
+- [AI không phải phép màu — nhưng bạn đang bị ai đó cố tình làm bạn quên điều đó](https:&#x2F;&#x2F;duthaho.dev&#x2F;ai-hype.html) <sub>· Apr 1, 2026</sub>
+- [Claude không biết mình đang nghĩ gì — và điều đó đáng lo ngại hơn bạn nghĩ](https:&#x2F;&#x2F;duthaho.dev&#x2F;claude-interpretability.html) <sub>· Mar 25, 2026</sub>
 
 → Archive at [duthaho.dev](https://duthaho.dev)
 
@@ -42,4 +42,4 @@ I architect AI-powered recruitment systems handling **1M+ daily conversations**,
 
 ---
 
-<sub>Auto-refreshed Saturday, April 25 at 05:27 PM (ICT) · [source](https://github.com/duthaho/duthaho/blob/main/main.mustache)</sub>
+<sub>Auto-refreshed Sunday, April 26 at 07:12 AM (ICT) · [source](https://github.com/duthaho/duthaho/blob/main/main.mustache)</sub>
