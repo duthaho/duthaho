@@ -24,12 +24,12 @@ I architect AI-powered recruitment systems handling **1M+ daily conversations**,
 
 ### Recent writing
 
+- [Hầu hết note của tôi chết trong một cái folder — và tôi đã sửa nhầm vấn đề suốt hai năm](https:&#x2F;&#x2F;duthaho.dev&#x2F;notes-that-get-used.html) <sub>· May 29, 2026</sub>
 - [Những thứ tôi học được sau 5 năm làm engineer — viết lúc hơi ngà ngà](https:&#x2F;&#x2F;duthaho.dev&#x2F;things-ive-learned.html) <sub>· May 5, 2026</sub>
 - [Prompt engineering không khó như bạn nghĩ — và không dễ như người ta nói](https:&#x2F;&#x2F;duthaho.dev&#x2F;effective-prompt-engineering.html) <sub>· May 1, 2026</sub>
 - [Tôi đọc source code bị leak của Claude Code — và nhận ra mình đang build agent sai từ đầu](https:&#x2F;&#x2F;duthaho.dev&#x2F;agentic-patterns.html) <sub>· Apr 25, 2026</sub>
 - [Karpathy vừa mô tả đúng thứ tôi đã thất bại khi xây — và lý do tôi sẽ thử lại](https:&#x2F;&#x2F;duthaho.dev&#x2F;llm-wiki.html) <sub>· Apr 16, 2026</sub>
 - [Claude không đếm tin nhắn — nó đếm token. Và tôi đã dùng sai từ đầu.](https:&#x2F;&#x2F;duthaho.dev&#x2F;claude-token-habits.html) <sub>· Apr 15, 2026</sub>
-- [Hai dòng code ẩn khiến Claude Code ngốn token gấp 4 lần — và cái kết không ai ngờ](https:&#x2F;&#x2F;duthaho.dev&#x2F;claude-code-token-drain.html) <sub>· Apr 2, 2026</sub>
 
 → Archive at [duthaho.dev](https://duthaho.dev)
 
@@ -42,4 +42,4 @@ I architect AI-powered recruitment systems handling **1M+ daily conversations**,
 
 ---
 
-<sub>Auto-refreshed Sunday, May 24 at 07:20 AM (ICT) · [source](https://github.com/duthaho/duthaho/blob/main/main.mustache)</sub>
+<sub>Auto-refreshed Sunday, May 31 at 07:22 AM (ICT) · [source](https://github.com/duthaho/duthaho/blob/main/main.mustache)</sub>
