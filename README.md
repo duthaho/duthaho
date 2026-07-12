@@ -24,12 +24,12 @@ I architect AI-powered recruitment systems handling **1M+ daily conversations**,
 
 ### Recent writing
 
+- [Rate limiter không phải bài toán chọn thuật toán: một buổi phỏng vấn đào mãi không đáy](https:&#x2F;&#x2F;duthaho.dev&#x2F;designing-a-rate-limiter.html) <sub>· Jul 5, 2026</sub>
 - [Con Redis không cho không cái gì: cái giá ẩn sau mỗi lớp cache](https:&#x2F;&#x2F;duthaho.dev&#x2F;caching-is-never-free.html) <sub>· Jul 1, 2026</sub>
 - [Từ monolith đến idempotency: một sợi dây, không phải sáu flashcard](https:&#x2F;&#x2F;duthaho.dev&#x2F;from-monolith-to-idempotency.html) <sub>· Jun 30, 2026</sub>
 - [Hai người thợ trong cỗ máy AI](https:&#x2F;&#x2F;duthaho.dev&#x2F;ai-inference-engineering.html) <sub>· Jun 18, 2026</sub>
 - [Chín câu hỏi mình giờ luôn hỏi khi đi phỏng vấn](https:&#x2F;&#x2F;duthaho.dev&#x2F;questions-i-ask-in-interviews.html) <sub>· Jun 16, 2026</sub>
 - [Claude Code trong codebase lớn: cách nó hoạt động và bắt đầu từ đâu](https:&#x2F;&#x2F;duthaho.dev&#x2F;claude-code-large-codebases.html) <sub>· Jun 15, 2026</sub>
-- [Đừng prompt agent nữa — hãy thiết kế vòng lặp prompt nó](https:&#x2F;&#x2F;duthaho.dev&#x2F;loop-engineering.html) <sub>· Jun 14, 2026</sub>
 
 → Archive at [duthaho.dev](https://duthaho.dev)
 
@@ -42,4 +42,4 @@ I architect AI-powered recruitment systems handling **1M+ daily conversations**,
 
 ---
 
-<sub>Auto-refreshed Sunday, July 5 at 07:21 AM (ICT) · [source](https://github.com/duthaho/duthaho/blob/main/main.mustache)</sub>
+<sub>Auto-refreshed Sunday, July 12 at 07:18 AM (ICT) · [source](https://github.com/duthaho/duthaho/blob/main/main.mustache)</sub>
