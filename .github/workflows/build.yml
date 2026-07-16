@@ -23,10 +23,12 @@ jobs:
 
       - name: Generate README
         run: node index.js
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Commit and Push if changed
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
-          git add README.md
+          git add README.md stats.svg
           git diff --quiet && git diff --staged --quiet || (git commit -m "Auto update README" && git push)

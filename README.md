@@ -43,11 +43,8 @@ I design systems that scale — and the teams that ship them. Twelve years from 
 
 ### GitHub
 
-<p>
-  <img src="https://github-readme-stats.vercel.app/api?username=duthaho&show_icons=true&hide_border=true&hide_title=true&bg_color=00000000&title_color=1e5fa8&text_color=41586d&icon_color=d6482f&count_private=true&include_all_commits=true" alt="GitHub stats" height="140" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=duthaho&layout=compact&hide_border=true&bg_color=00000000&title_color=1e5fa8&text_color=41586d&langs_count=8" alt="Top languages" height="140" />
-</p>
+<img src="stats.svg" alt="GitHub stats — stars, repos, followers, forks, and top languages" width="100%" />
 
 ---
 
-<sub>Auto-refreshed Friday, July 17 at 05:35 AM (ICT) · [source](https://github.com/duthaho/duthaho/blob/main/main.mustache) · career architecture at [duthaho.github.io](https://duthaho.github.io)</sub>
+<sub>Auto-refreshed Friday, July 17 at 05:43 AM (ICT) · [source](https://github.com/duthaho/duthaho/blob/main/main.mustache) · career architecture at [duthaho.github.io](https://duthaho.github.io)</sub>

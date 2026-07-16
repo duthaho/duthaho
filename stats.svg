@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 216" width="860" height="216" role="img" aria-label="GitHub stats for duthaho">
+  <defs>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="rgba(127,179,217,0.10)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="860" height="216" fill="#0d3050"/>
+  <rect width="860" height="216" fill="url(#grid)"/>
+  <rect x="10" y="10" width="840" height="196" fill="none" stroke="rgba(127,179,217,0.38)" stroke-width="1"/>
+  <text x="36" y="46" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="11" letter-spacing="2.5" fill="#8fb8d9">GITHUB — AS BUILT · @DUTHAHO</text>
+  <text x="824" y="46" text-anchor="end" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="11" letter-spacing="1" fill="#8fb8d9"><tspan fill="#d6482f">▎</tspan>DWG NO. DTH-002 · REV 2026.07.16</text>
+  
+    <g>
+      <line x1="36" y1="76" x2="36" y2="112" stroke="#8fb8d9" stroke-width="1"/>
+      <line x1="164" y1="76" x2="164" y2="112" stroke="#8fb8d9" stroke-width="1"/>
+      <text x="100" y="102" text-anchor="middle" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="27" font-weight="600" fill="#eaf4fb">274</text>
+      <text x="100" y="128" text-anchor="middle" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="9" letter-spacing="1.5" fill="#8fb8d9">STARS EARNED</text>
+    </g>
+    <g>
+      <line x1="196" y1="76" x2="196" y2="112" stroke="#8fb8d9" stroke-width="1"/>
+      <line x1="324" y1="76" x2="324" y2="112" stroke="#8fb8d9" stroke-width="1"/>
+      <text x="260" y="102" text-anchor="middle" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="27" font-weight="600" fill="#eaf4fb">25</text>
+      <text x="260" y="128" text-anchor="middle" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="9" letter-spacing="1.5" fill="#8fb8d9">PUBLIC REPOS</text>
+    </g>
+    <g>
+      <line x1="356" y1="76" x2="356" y2="112" stroke="#8fb8d9" stroke-width="1"/>
+      <line x1="484" y1="76" x2="484" y2="112" stroke="#8fb8d9" stroke-width="1"/>
+      <text x="420" y="102" text-anchor="middle" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="27" font-weight="600" fill="#eaf4fb">51</text>
+      <text x="420" y="128" text-anchor="middle" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="9" letter-spacing="1.5" fill="#8fb8d9">FOLLOWERS</text>
+    </g>
+    <g>
+      <line x1="516" y1="76" x2="516" y2="112" stroke="#8fb8d9" stroke-width="1"/>
+      <line x1="644" y1="76" x2="644" y2="112" stroke="#8fb8d9" stroke-width="1"/>
+      <text x="580" y="102" text-anchor="middle" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="27" font-weight="600" fill="#eaf4fb">79</text>
+      <text x="580" y="128" text-anchor="middle" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="9" letter-spacing="1.5" fill="#8fb8d9">FORKS OF MY WORK</text>
+    </g>
+  <text x="36" y="148" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="9" letter-spacing="1.5" fill="#8fb8d9">MATERIALS IN USE — TOP LANGUAGES</text>
+  <rect x="36.0" y="158" width="178.0" height="8" fill="#7fb3d9"/><rect x="216.0" y="158" width="88.0" height="8" fill="#3b82c4"/><rect x="306.0" y="158" width="88.0" height="8" fill="#d6482f"/><rect x="396.0" y="158" width="68.0" height="8" fill="#b7d4e8"/><rect x="466.0" y="158" width="43.0" height="8" fill="#5a9bd0"/>
+  <text x="36" y="186" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="10"><tspan fill="#7fb3d9">■</tspan> <tspan fill="#8fb8d9">JavaScript 36%</tspan>  <tspan fill="#3b82c4">■</tspan> <tspan fill="#8fb8d9">Python 18%</tspan>  <tspan fill="#d6482f">■</tspan> <tspan fill="#8fb8d9">Shell 18%</tspan>  <tspan fill="#b7d4e8">■</tspan> <tspan fill="#8fb8d9">TypeScript 14%</tspan>  <tspan fill="#5a9bd0">■</tspan> <tspan fill="#8fb8d9">HTML 9%</tspan></text>
+  <text x="824" y="186" text-anchor="end" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="9" letter-spacing="1.5" fill="#8fb8d9">AUTO-REFRESHED WEEKLY</text>
+</svg>
