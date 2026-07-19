@@ -47,4 +47,4 @@ I design systems that scale — and the teams that ship them. Twelve years from 
 
 ---
 
-<sub>Auto-refreshed Friday, July 17 at 05:43 AM (ICT) · [source](https://github.com/duthaho/duthaho/blob/main/main.mustache) · career architecture at [duthaho.github.io](https://duthaho.github.io)</sub>
+<sub>Auto-refreshed Sunday, July 19 at 08:21 AM (ICT) · [source](https://github.com/duthaho/duthaho/blob/main/main.mustache) · career architecture at [duthaho.github.io](https://duthaho.github.io)</sub>

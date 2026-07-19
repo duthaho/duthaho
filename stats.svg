@@ -8,7 +8,7 @@
   <rect width="860" height="216" fill="url(#grid)"/>
   <rect x="10" y="10" width="840" height="196" fill="none" stroke="rgba(127,179,217,0.38)" stroke-width="1"/>
   <text x="36" y="46" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="11" letter-spacing="2.5" fill="#8fb8d9">GITHUB — AS BUILT · @DUTHAHO</text>
-  <text x="824" y="46" text-anchor="end" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="11" letter-spacing="1" fill="#8fb8d9"><tspan fill="#d6482f">▎</tspan>DWG NO. DTH-002 · REV 2026.07.16</text>
+  <text x="824" y="46" text-anchor="end" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="11" letter-spacing="1" fill="#8fb8d9"><tspan fill="#d6482f">▎</tspan>DWG NO. DTH-002 · REV 2026.07.19</text>
   
     <g>
       <line x1="36" y1="76" x2="36" y2="112" stroke="#8fb8d9" stroke-width="1"/>
@@ -35,7 +35,7 @@
       <text x="580" y="128" text-anchor="middle" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="9" letter-spacing="1.5" fill="#8fb8d9">FORKS OF MY WORK</text>
     </g>
   <text x="36" y="148" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="9" letter-spacing="1.5" fill="#8fb8d9">MATERIALS IN USE — TOP LANGUAGES</text>
-  <rect x="36.0" y="158" width="178.0" height="8" fill="#7fb3d9"/><rect x="216.0" y="158" width="88.0" height="8" fill="#3b82c4"/><rect x="306.0" y="158" width="88.0" height="8" fill="#d6482f"/><rect x="396.0" y="158" width="68.0" height="8" fill="#b7d4e8"/><rect x="466.0" y="158" width="43.0" height="8" fill="#5a9bd0"/>
-  <text x="36" y="186" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="10"><tspan fill="#7fb3d9">■</tspan> <tspan fill="#8fb8d9">JavaScript 36%</tspan>  <tspan fill="#3b82c4">■</tspan> <tspan fill="#8fb8d9">Python 18%</tspan>  <tspan fill="#d6482f">■</tspan> <tspan fill="#8fb8d9">Shell 18%</tspan>  <tspan fill="#b7d4e8">■</tspan> <tspan fill="#8fb8d9">TypeScript 14%</tspan>  <tspan fill="#5a9bd0">■</tspan> <tspan fill="#8fb8d9">HTML 9%</tspan></text>
+  <rect x="36.0" y="158" width="203.0" height="8" fill="#7fb3d9"/><rect x="241.0" y="158" width="88.0" height="8" fill="#3b82c4"/><rect x="331.0" y="158" width="88.0" height="8" fill="#d6482f"/><rect x="421.0" y="158" width="68.0" height="8" fill="#b7d4e8"/><rect x="491.0" y="158" width="23.0" height="8" fill="#5a9bd0"/>
+  <text x="36" y="186" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="10"><tspan fill="#7fb3d9">■</tspan> <tspan fill="#8fb8d9">JavaScript 41%</tspan>  <tspan fill="#3b82c4">■</tspan> <tspan fill="#8fb8d9">Python 18%</tspan>  <tspan fill="#d6482f">■</tspan> <tspan fill="#8fb8d9">Shell 18%</tspan>  <tspan fill="#b7d4e8">■</tspan> <tspan fill="#8fb8d9">TypeScript 14%</tspan>  <tspan fill="#5a9bd0">■</tspan> <tspan fill="#8fb8d9">HTML 5%</tspan></text>
   <text x="824" y="186" text-anchor="end" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="9" letter-spacing="1.5" fill="#8fb8d9">AUTO-REFRESHED WEEKLY</text>
 </svg>
