@@ -138,6 +138,115 @@ function renderStatsSvg(s) {
 `;
 }
 
+// ------------------------------------------------------------------
+// Neofetch-style hero card (neofetch.svg) — terminal ASCII art on the
+// left, system-info fields on the right, in the same blueprint theme
+// as stats.svg. GitHub numbers are baked in at build time.
+// ------------------------------------------------------------------
+
+function renderNeofetchSvg(s) {
+  const BRIGHT = '#eaf4fb', DIM = '#8fb8d9', KEY = '#7fb3d9', LINE = 'rgba(127,179,217,0.38)';
+  const RED = '#d6482f', DOT = 'rgba(143,184,217,0.28)', ART = '#7fb3d9', ARTHI = '#eaf4fb';
+  const MONO = "'SFMono-Regular','Consolas','Liberation Mono',monospace";
+  const esc = t => String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+
+  // --- Left: terminal window rendered in pure ASCII (guaranteed to align) ---
+  const IW = 18; // inner width
+  const frame = t => '|' + t.padEnd(IW).slice(0, IW) + '|';
+  const artLines = [
+    '.' + '-'.repeat(IW) + '.',
+    frame('  o  o  o'),
+    '|' + '-'.repeat(IW) + '|',
+    frame(' ~ $ whoami'),
+    frame(' > duthaho'),
+    frame(''),
+    frame(' ~ $ ./ship --all'),
+    frame(' [########--] 92%'),
+    frame(''),
+    frame(' ~ $ _'),
+    "'" + '-'.repeat(IW) + "'",
+  ];
+
+  // --- Right: neofetch-style key/value fields (grounded in real bio) ---
+  const HEAD = t => ({ head: t });
+  const KV = (k, v, c) => ({ k, v, c });
+  const GAP = { gap: true };
+  const rows = [
+    HEAD('duthaho@architect'),
+    KV('OS', 'Distributed Systems · Linux · K8s'),
+    KV('Host', 'Paradox  (ex-Gameloft)'),
+    KV('Uptime', '12 years shipping to production'),
+    KV('Kernel', 'Event-driven + DDD @ 1M+ req/day'),
+    KV('IDE', 'VS Code · Claude Code'),
+    KV('Location', 'Da Nang, Vietnam'),
+    GAP,
+    KV('Languages.Programming', 'Python · TypeScript · Rust'),
+    KV('Languages.Framework', 'Django · FastAPI · Node.js · Vue'),
+    KV('Languages.Data', 'MySQL · MongoDB · Redis'),
+    KV('Languages.Infra', 'Kubernetes · Docker · AWS'),
+    KV('Languages.Human', 'Vietnamese · English'),
+    GAP,
+    KV('Hobbies.Software', 'AI tooling · system design'),
+    KV('Hobbies.Writing', 'field notes @ duthaho.dev'),
+    GAP,
+    HEAD('Contact'),
+    KV('Portfolio', 'duthaho.github.io', BRIGHT),
+    KV('Blog', 'duthaho.dev', BRIGHT),
+    KV('LinkedIn', 'in/duthaho', BRIGHT),
+    KV('Substack', 'duthaho.substack.com', BRIGHT),
+    GAP,
+    HEAD('GitHub Stats'),
+    KV('Repos', `${s.repos}      Stars: ${s.stars}`, BRIGHT),
+    KV('Followers', `${s.followers}      Forks: ${s.forks}`, BRIGHT),
+  ];
+
+  const INFO_X = 300, LH = 20.5, DOTCOL = 24;
+  let y = 108;
+  const info = rows.map(r => {
+    if (r.gap) { y += LH * 0.55; return ''; }
+    const yy = y; y += LH;
+    if (r.head) {
+      const rule = '─'.repeat(Math.max(4, 34 - r.head.length));
+      return `<text x="${INFO_X}" y="${yy}" xml:space="preserve" font-family="${MONO}" font-size="13" font-weight="600">`
+        + `<tspan fill="${RED}">${esc(r.head)}</tspan> <tspan fill="${LINE}">${rule}</tspan></text>`;
+    }
+    const label = r.k + ':';
+    const dots = '.'.repeat(Math.max(2, DOTCOL - label.length));
+    return `<text x="${INFO_X}" y="${yy}" xml:space="preserve" font-family="${MONO}" font-size="13">`
+      + `<tspan fill="${KEY}">${esc(label)}</tspan> <tspan fill="${DOT}">${dots}</tspan> `
+      + `<tspan fill="${r.c || DIM}">${esc(r.v)}</tspan></text>`;
+  }).join('\n  ');
+
+  const W = 900, H = Math.ceil(y + 40);
+  const rev = new Date().toISOString().slice(0, 10).replace(/-/g, '.');
+
+  const artStartY = 118, artLH = 18.5;
+  const art = artLines.map((ln, i) => {
+    const hi = i === 4 || i === 9; // highlight the prompt/output lines
+    return `<text x="44" y="${(artStartY + i * artLH).toFixed(1)}" xml:space="preserve" `
+      + `font-family="${MONO}" font-size="14" fill="${hi ? ARTHI : ART}">${esc(ln)}</text>`;
+  }).join('\n  ');
+
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-label="Profile card for ${USER}">
+  <defs>
+    <pattern id="ngrid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="rgba(127,179,217,0.10)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="${W}" height="${H}" fill="#0d3050"/>
+  <rect width="${W}" height="${H}" fill="url(#ngrid)"/>
+  <rect x="10" y="10" width="${W - 20}" height="${H - 20}" fill="none" stroke="${LINE}" stroke-width="1"/>
+  <line x1="278" y1="30" x2="278" y2="${H - 56}" stroke="${LINE}" stroke-width="1"/>
+  <text x="36" y="46" font-family="${MONO}" font-size="11" letter-spacing="2.5" fill="${DIM}">PROFILE — AS BUILT · @${USER.toUpperCase()}</text>
+  <text x="${W - 36}" y="46" text-anchor="end" font-family="${MONO}" font-size="11" letter-spacing="1" fill="${DIM}"><tspan fill="${RED}">▎</tspan>DWG NO. DTH-001 · REV ${rev}</text>
+  ${art}
+  <text x="44" y="${(artStartY + artLines.length * artLH + 14).toFixed(1)}" font-family="${MONO}" font-size="11" letter-spacing="1.5" fill="${DIM}">SOLUTION ARCHITECT</text>
+  ${info}
+  <text x="${W - 36}" y="${H - 22}" text-anchor="end" font-family="${MONO}" font-size="9" letter-spacing="1.5" fill="${DIM}">AUTO-REFRESHED WEEKLY</text>
+</svg>
+`;
+}
+
 async function generateReadme() {
   const template = fs.readFileSync('main.mustache', 'utf-8');
 
@@ -148,6 +257,9 @@ async function generateReadme() {
 
   fs.writeFileSync('stats.svg', renderStatsSvg(githubStats));
   console.log('stats.svg updated successfully!');
+
+  fs.writeFileSync('neofetch.svg', renderNeofetchSvg(githubStats));
+  console.log('neofetch.svg updated successfully!');
 
   const data = {
     date: new Date().toLocaleDateString('en-US', {

@@ -10,6 +10,8 @@
 <a href="https://www.linkedin.com/in/duthaho"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-duthaho-0A66C2?style=flat-square&logo=linkedin&logoColor=white" /></a>
 <a href="https://duthaho.substack.com"><img alt="Substack" src="https://img.shields.io/badge/Substack-newsletter-FF6719?style=flat-square&logo=substack&logoColor=white" /></a>
 
+<img src="neofetch.svg" alt="duthaho@architect — a neofetch-style profile card: solution architect, distributed systems, top languages, and live GitHub stats" width="100%" />
+
 </div>
 
 ---
@@ -47,4 +49,4 @@ I design systems that scale — and the teams that ship them. Twelve years from 
 
 ---
 
-<sub>Auto-refreshed Sunday, July 19 at 08:21 AM (ICT) · [source](https://github.com/duthaho/duthaho/blob/main/main.mustache) · career architecture at [duthaho.github.io](https://duthaho.github.io)</sub>
+<sub>Auto-refreshed Thursday, July 23 at 11:08 PM (ICT) · [source](https://github.com/duthaho/duthaho/blob/main/main.mustache) · career architecture at [duthaho.github.io](https://duthaho.github.io)</sub>
