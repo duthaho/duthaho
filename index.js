@@ -84,7 +84,7 @@ async function fetchGithubStats() {
 
 function renderStatsSvg(s) {
   const W = 860, H = 216;
-  const BRIGHT = '#eaf4fb', DIM = '#8fb8d9', LINE = 'rgba(127,179,217,0.38)', RED = '#d6482f';
+  const BRIGHT = '#e7ede9', DIM = '#8a968f', LINE = 'rgba(155,178,165,0.28)', AMBER = '#f2b544', GREEN = '#7ee787';
   const MONO = "'SFMono-Regular','Consolas','Liberation Mono',monospace";
 
   const dims = [
@@ -98,13 +98,13 @@ function renderStatsSvg(s) {
     <g>
       <line x1="${x}" y1="76" x2="${x}" y2="112" stroke="${DIM}" stroke-width="1"/>
       <line x1="${x + 128}" y1="76" x2="${x + 128}" y2="112" stroke="${DIM}" stroke-width="1"/>
-      <text x="${x + 64}" y="102" text-anchor="middle" font-family="${MONO}" font-size="27" font-weight="600" fill="${BRIGHT}">${d.value}</text>
+      <text x="${x + 64}" y="102" text-anchor="middle" font-family="${MONO}" font-size="27" font-weight="600" fill="${GREEN}">${d.value}</text>
       <text x="${x + 64}" y="128" text-anchor="middle" font-family="${MONO}" font-size="9" letter-spacing="1.5" fill="${DIM}">${d.label}</text>
     </g>`;
   }).join('');
 
   const BAR_X = 36, BAR_W = 500, BAR_Y = 158;
-  const COLORS = ['#7fb3d9', '#3b82c4', '#d6482f', '#b7d4e8', '#5a9bd0'];
+  const COLORS = ['#7ee787', '#8ab4f8', '#f2b544', '#56b877', '#b8c9c0'];
   let cursor = BAR_X;
   const segs = s.langs.map((l, i) => {
     const w = BAR_W * l.pct / 100;
@@ -121,16 +121,16 @@ function renderStatsSvg(s) {
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-label="GitHub stats for ${USER}">
   <defs>
     <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
-      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="rgba(127,179,217,0.10)" stroke-width="1"/>
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="rgba(155,178,165,0.07)" stroke-width="1"/>
     </pattern>
   </defs>
-  <rect width="${W}" height="${H}" fill="#0d3050"/>
+  <rect width="${W}" height="${H}" fill="#0a0e0c"/>
   <rect width="${W}" height="${H}" fill="url(#grid)"/>
   <rect x="10" y="10" width="${W - 20}" height="${H - 20}" fill="none" stroke="${LINE}" stroke-width="1"/>
-  <text x="36" y="46" font-family="${MONO}" font-size="11" letter-spacing="2.5" fill="${DIM}">GITHUB — AS BUILT · @${USER.toUpperCase()}</text>
-  <text x="${W - 36}" y="46" text-anchor="end" font-family="${MONO}" font-size="11" letter-spacing="1" fill="${DIM}"><tspan fill="${RED}">▎</tspan>DWG NO. DTH-002 · REV ${rev}</text>
+  <text x="36" y="46" font-family="${MONO}" font-size="11" letter-spacing="2.5" fill="${DIM}">GITHUB — LIVE · @${USER.toUpperCase()}</text>
+  <text x="${W - 36}" y="46" text-anchor="end" font-family="${MONO}" font-size="11" letter-spacing="1" fill="${DIM}"><tspan fill="${AMBER}">▎</tspan>REV ${rev}</text>
   ${dims}
-  <text x="${BAR_X}" y="${BAR_Y - 10}" font-family="${MONO}" font-size="9" letter-spacing="1.5" fill="${DIM}">MATERIALS IN USE — TOP LANGUAGES</text>
+  <text x="${BAR_X}" y="${BAR_Y - 10}" font-family="${MONO}" font-size="9" letter-spacing="1.5" fill="${DIM}">TOP LANGUAGES</text>
   ${segs}
   <text x="${BAR_X}" y="${BAR_Y + 28}" font-family="${MONO}" font-size="10">${legend}</text>
   <text x="${W - 36}" y="${BAR_Y + 28}" text-anchor="end" font-family="${MONO}" font-size="9" letter-spacing="1.5" fill="${DIM}">AUTO-REFRESHED WEEKLY</text>
@@ -145,8 +145,8 @@ function renderStatsSvg(s) {
 // ------------------------------------------------------------------
 
 function renderNeofetchSvg(s) {
-  const BRIGHT = '#eaf4fb', DIM = '#8fb8d9', KEY = '#7fb3d9', LINE = 'rgba(127,179,217,0.38)';
-  const RED = '#d6482f', DOT = 'rgba(143,184,217,0.28)', ART = '#7fb3d9', ARTHI = '#eaf4fb';
+  const BRIGHT = '#e7ede9', DIM = '#8a968f', KEY = '#7ee787', LINE = 'rgba(155,178,165,0.28)';
+  const AMBER = '#f2b544', DOT = 'rgba(170,190,180,0.26)', ART = '#7ee787', ARTHI = '#e7ede9';
   const MONO = "'SFMono-Regular','Consolas','Liberation Mono',monospace";
   const esc = t => String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
@@ -208,7 +208,7 @@ function renderNeofetchSvg(s) {
     if (r.head) {
       const rule = '─'.repeat(Math.max(4, 34 - r.head.length));
       return `<text x="${INFO_X}" y="${yy}" xml:space="preserve" font-family="${MONO}" font-size="13" font-weight="600">`
-        + `<tspan fill="${RED}">${esc(r.head)}</tspan> <tspan fill="${LINE}">${rule}</tspan></text>`;
+        + `<tspan fill="${AMBER}">${esc(r.head)}</tspan> <tspan fill="${LINE}">${rule}</tspan></text>`;
     }
     const label = r.k + ':';
     const dots = '.'.repeat(Math.max(2, DOTCOL - label.length));
@@ -230,15 +230,15 @@ function renderNeofetchSvg(s) {
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-label="Profile card for ${USER}">
   <defs>
     <pattern id="ngrid" width="24" height="24" patternUnits="userSpaceOnUse">
-      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="rgba(127,179,217,0.10)" stroke-width="1"/>
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="rgba(155,178,165,0.07)" stroke-width="1"/>
     </pattern>
   </defs>
-  <rect width="${W}" height="${H}" fill="#0d3050"/>
+  <rect width="${W}" height="${H}" fill="#0a0e0c"/>
   <rect width="${W}" height="${H}" fill="url(#ngrid)"/>
   <rect x="10" y="10" width="${W - 20}" height="${H - 20}" fill="none" stroke="${LINE}" stroke-width="1"/>
   <line x1="278" y1="30" x2="278" y2="${H - 56}" stroke="${LINE}" stroke-width="1"/>
-  <text x="36" y="46" font-family="${MONO}" font-size="11" letter-spacing="2.5" fill="${DIM}">PROFILE — AS BUILT · @${USER.toUpperCase()}</text>
-  <text x="${W - 36}" y="46" text-anchor="end" font-family="${MONO}" font-size="11" letter-spacing="1" fill="${DIM}"><tspan fill="${RED}">▎</tspan>DWG NO. DTH-001 · REV ${rev}</text>
+  <text x="36" y="46" font-family="${MONO}" font-size="11" letter-spacing="2.5" fill="${DIM}">PROFILE — LIVE · @${USER.toUpperCase()}</text>
+  <text x="${W - 36}" y="46" text-anchor="end" font-family="${MONO}" font-size="11" letter-spacing="1" fill="${DIM}"><tspan fill="${AMBER}">▎</tspan>REV ${rev}</text>
   ${art}
   <text x="44" y="${(artStartY + artLines.length * artLH + 14).toFixed(1)}" font-family="${MONO}" font-size="11" letter-spacing="1.5" fill="${DIM}">SOLUTION ARCHITECT</text>
   ${info}
