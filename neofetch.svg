@@ -9,7 +9,7 @@
   <rect x="10" y="10" width="880" height="625" fill="none" stroke="rgba(155,178,165,0.28)" stroke-width="1"/>
   <line x1="278" y1="30" x2="278" y2="589" stroke="rgba(155,178,165,0.28)" stroke-width="1"/>
   <text x="36" y="46" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="11" letter-spacing="2.5" fill="#8a968f">PROFILE — LIVE · @DUTHAHO</text>
-  <text x="864" y="46" text-anchor="end" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="11" letter-spacing="1" fill="#8a968f"><tspan fill="#f2b544">▎</tspan>REV 2026.07.24</text>
+  <text x="864" y="46" text-anchor="end" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="11" letter-spacing="1" fill="#8a968f"><tspan fill="#f2b544">▎</tspan>REV 2026.07.26</text>
   <text x="44" y="118.0" xml:space="preserve" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="14" fill="#7ee787">.------------------.</text>
   <text x="44" y="136.5" xml:space="preserve" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="14" fill="#7ee787">|  o  o  o         |</text>
   <text x="44" y="155.0" xml:space="preserve" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="14" fill="#7ee787">|------------------|</text>
@@ -46,7 +46,7 @@
   <text x="300" y="510.82499999999993" xml:space="preserve" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="13"><tspan fill="#7ee787">Substack:</tspan> <tspan fill="rgba(170,190,180,0.26)">...............</tspan> <tspan fill="#e7ede9">duthaho.substack.com</tspan></text>
   
   <text x="300" y="542.5999999999999" xml:space="preserve" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="13" font-weight="600"><tspan fill="#f2b544">GitHub Stats</tspan> <tspan fill="rgba(155,178,165,0.28)">──────────────────────</tspan></text>
-  <text x="300" y="563.0999999999999" xml:space="preserve" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="13"><tspan fill="#7ee787">Repos:</tspan> <tspan fill="rgba(170,190,180,0.26)">..................</tspan> <tspan fill="#e7ede9">25      Stars: 275</tspan></text>
+  <text x="300" y="563.0999999999999" xml:space="preserve" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="13"><tspan fill="#7ee787">Repos:</tspan> <tspan fill="rgba(170,190,180,0.26)">..................</tspan> <tspan fill="#e7ede9">26      Stars: 277</tspan></text>
   <text x="300" y="583.5999999999999" xml:space="preserve" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="13"><tspan fill="#7ee787">Followers:</tspan> <tspan fill="rgba(170,190,180,0.26)">..............</tspan> <tspan fill="#e7ede9">51      Forks: 79</tspan></text>
   <text x="864" y="623" text-anchor="end" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="9" letter-spacing="1.5" fill="#8a968f">AUTO-REFRESHED WEEKLY</text>
 </svg>
