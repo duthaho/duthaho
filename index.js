@@ -2,7 +2,7 @@ const fs = require('fs');
 const Mustache = require('mustache');
 
 const BLOG_URL = 'https://duthaho.dev/';
-const FEED_URL = new URL('feed.xml', BLOG_URL).href;
+const FEED_URL = new URL('rss.xml', BLOG_URL).href;
 const POST_LIMIT = 6;
 
 const ENTITIES = { '&amp;': '&', '&lt;': '<', '&gt;': '>', '&quot;': '"', '&#39;': "'", '&apos;': "'" };
