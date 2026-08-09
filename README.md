@@ -34,12 +34,12 @@ I design systems that scale — and the teams that ship them. Twelve years from 
 
 ### Recent writing
 
-- [Rate limiter không phải bài toán chọn thuật toán: một buổi phỏng vấn đào mãi không đáy](https://duthaho.dev/designing-a-rate-limiter.html) <sub>· Jul 5, 2026</sub>
-- [Con Redis không cho không cái gì: cái giá ẩn sau mỗi lớp cache](https://duthaho.dev/caching-is-never-free.html) <sub>· Jul 1, 2026</sub>
-- [Từ monolith đến idempotency: một sợi dây, không phải sáu flashcard](https://duthaho.dev/from-monolith-to-idempotency.html) <sub>· Jun 30, 2026</sub>
-- [Hai người thợ trong cỗ máy AI](https://duthaho.dev/ai-inference-engineering.html) <sub>· Jun 18, 2026</sub>
-- [Chín câu hỏi mình giờ luôn hỏi khi đi phỏng vấn](https://duthaho.dev/questions-i-ask-in-interviews.html) <sub>· Jun 16, 2026</sub>
-- [Claude Code trong codebase lớn: cách nó hoạt động và bắt đầu từ đâu](https://duthaho.dev/claude-code-large-codebases.html) <sub>· Jun 15, 2026</sub>
+- [We picked Redis Streams over Kafka: and what the docs don't tell you upfront](https://duthaho.dev/redis-streams-over-kafka/) <sub>· Jul 12, 2026</sub>
+- [A rate limiter isn't an algorithm-picking problem: an interview that just kept digging deeper](https://duthaho.dev/designing-a-rate-limiter/) <sub>· Jul 5, 2026</sub>
+- [Redis never gives you anything for free: the hidden price behind every layer of cache](https://duthaho.dev/caching-is-never-free/) <sub>· Jul 1, 2026</sub>
+- [From monolith to idempotency:: one thread, not six flashcards](https://duthaho.dev/from-monolith-to-idempotency/) <sub>· Jun 30, 2026</sub>
+- [Two workers: inside the AI machine](https://duthaho.dev/ai-inference-engineering/) <sub>· Jun 18, 2026</sub>
+- [Nine questions I now always ask: when I go into an interview](https://duthaho.dev/questions-i-ask-in-interviews/) <sub>· Jun 16, 2026</sub>
 
 → Archive at [duthaho.dev](https://duthaho.dev)
 
@@ -49,4 +49,4 @@ I design systems that scale — and the teams that ship them. Twelve years from 
 
 ---
 
-<sub>Auto-refreshed Sunday, July 26 at 08:27 AM (ICT) · [source](https://github.com/duthaho/duthaho/blob/main/main.mustache) · career architecture at [duthaho.github.io](https://duthaho.github.io)</sub>
+<sub>Auto-refreshed Sunday, August 9 at 07:44 AM (ICT) · [source](https://github.com/duthaho/duthaho/blob/main/main.mustache) · career architecture at [duthaho.github.io](https://duthaho.github.io)</sub>
