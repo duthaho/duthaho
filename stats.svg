@@ -8,18 +8,18 @@
   <rect width="860" height="216" fill="url(#grid)"/>
   <rect x="10" y="10" width="840" height="196" fill="none" stroke="rgba(155,178,165,0.28)" stroke-width="1"/>
   <text x="36" y="46" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="11" letter-spacing="2.5" fill="#8a968f">GITHUB — LIVE · @DUTHAHO</text>
-  <text x="824" y="46" text-anchor="end" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="11" letter-spacing="1" fill="#8a968f"><tspan fill="#f2b544">▎</tspan>REV 2026.08.09</text>
+  <text x="824" y="46" text-anchor="end" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="11" letter-spacing="1" fill="#8a968f"><tspan fill="#f2b544">▎</tspan>REV 2026.08.16</text>
   
     <g>
       <line x1="36" y1="76" x2="36" y2="112" stroke="#8a968f" stroke-width="1"/>
       <line x1="164" y1="76" x2="164" y2="112" stroke="#8a968f" stroke-width="1"/>
-      <text x="100" y="102" text-anchor="middle" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="27" font-weight="600" fill="#7ee787">282</text>
+      <text x="100" y="102" text-anchor="middle" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="27" font-weight="600" fill="#7ee787">283</text>
       <text x="100" y="128" text-anchor="middle" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="9" letter-spacing="1.5" fill="#8a968f">STARS EARNED</text>
     </g>
     <g>
       <line x1="196" y1="76" x2="196" y2="112" stroke="#8a968f" stroke-width="1"/>
       <line x1="324" y1="76" x2="324" y2="112" stroke="#8a968f" stroke-width="1"/>
-      <text x="260" y="102" text-anchor="middle" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="27" font-weight="600" fill="#7ee787">27</text>
+      <text x="260" y="102" text-anchor="middle" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="27" font-weight="600" fill="#7ee787">31</text>
       <text x="260" y="128" text-anchor="middle" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="9" letter-spacing="1.5" fill="#8a968f">PUBLIC REPOS</text>
     </g>
     <g>
@@ -35,7 +35,7 @@
       <text x="580" y="128" text-anchor="middle" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="9" letter-spacing="1.5" fill="#8a968f">FORKS OF MY WORK</text>
     </g>
   <text x="36" y="148" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="9" letter-spacing="1.5" fill="#8a968f">TOP LANGUAGES</text>
-  <rect x="36.0" y="158" width="188.0" height="8" fill="#7ee787"/><rect x="226.0" y="158" width="83.0" height="8" fill="#8ab4f8"/><rect x="311.0" y="158" width="83.0" height="8" fill="#f2b544"/><rect x="396.0" y="158" width="83.0" height="8" fill="#56b877"/><rect x="481.0" y="158" width="38.0" height="8" fill="#b8c9c0"/>
-  <text x="36" y="186" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="10"><tspan fill="#7ee787">■</tspan> <tspan fill="#8a968f">JavaScript 38%</tspan>  <tspan fill="#8ab4f8">■</tspan> <tspan fill="#8a968f">Python 17%</tspan>  <tspan fill="#f2b544">■</tspan> <tspan fill="#8a968f">Shell 17%</tspan>  <tspan fill="#56b877">■</tspan> <tspan fill="#8a968f">TypeScript 17%</tspan>  <tspan fill="#b8c9c0">■</tspan> <tspan fill="#8a968f">MDX 8%</tspan></text>
+  <rect x="36.0" y="158" width="158.0" height="8" fill="#7ee787"/><rect x="196.0" y="158" width="123.0" height="8" fill="#8ab4f8"/><rect x="321.0" y="158" width="88.0" height="8" fill="#f2b544"/><rect x="411.0" y="158" width="68.0" height="8" fill="#56b877"/><rect x="481.0" y="158" width="33.0" height="8" fill="#b8c9c0"/>
+  <text x="36" y="186" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="10"><tspan fill="#7ee787">■</tspan> <tspan fill="#8a968f">JavaScript 32%</tspan>  <tspan fill="#8ab4f8">■</tspan> <tspan fill="#8a968f">TypeScript 25%</tspan>  <tspan fill="#f2b544">■</tspan> <tspan fill="#8a968f">Python 18%</tspan>  <tspan fill="#56b877">■</tspan> <tspan fill="#8a968f">Shell 14%</tspan>  <tspan fill="#b8c9c0">■</tspan> <tspan fill="#8a968f">MDX 7%</tspan></text>
   <text x="824" y="186" text-anchor="end" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="9" letter-spacing="1.5" fill="#8a968f">AUTO-REFRESHED WEEKLY</text>
 </svg>
