@@ -8,12 +8,12 @@
   <rect width="860" height="216" fill="url(#grid)"/>
   <rect x="10" y="10" width="840" height="196" fill="none" stroke="rgba(155,178,165,0.28)" stroke-width="1"/>
   <text x="36" y="46" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="11" letter-spacing="2.5" fill="#8a968f">GITHUB — LIVE · @DUTHAHO</text>
-  <text x="824" y="46" text-anchor="end" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="11" letter-spacing="1" fill="#8a968f"><tspan fill="#f2b544">▎</tspan>REV 2026.08.30</text>
+  <text x="824" y="46" text-anchor="end" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="11" letter-spacing="1" fill="#8a968f"><tspan fill="#f2b544">▎</tspan>REV 2026.09.06</text>
   
     <g>
       <line x1="36" y1="76" x2="36" y2="112" stroke="#8a968f" stroke-width="1"/>
       <line x1="164" y1="76" x2="164" y2="112" stroke="#8a968f" stroke-width="1"/>
-      <text x="100" y="102" text-anchor="middle" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="27" font-weight="600" fill="#7ee787">284</text>
+      <text x="100" y="102" text-anchor="middle" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="27" font-weight="600" fill="#7ee787">283</text>
       <text x="100" y="128" text-anchor="middle" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="9" letter-spacing="1.5" fill="#8a968f">STARS EARNED</text>
     </g>
     <g>
