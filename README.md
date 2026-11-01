@@ -34,12 +34,12 @@ I design systems that scale — and the teams that ship them. Twelve years from 
 
 ### Recent writing
 
+- [Reverse engineering used to require years of expertise: Opus 5.5 collapsed that gap in one tool](https://duthaho.dev/reverse-engineering-opus/) <sub>· Oct 30, 2026</sub>
 - [We picked Redis Streams over Kafka: and what the docs don't tell you upfront](https://duthaho.dev/redis-streams-over-kafka/) <sub>· Jul 12, 2026</sub>
 - [A rate limiter isn't an algorithm-picking problem: an interview that just kept digging deeper](https://duthaho.dev/designing-a-rate-limiter/) <sub>· Jul 5, 2026</sub>
 - [Redis never gives you anything for free: the hidden price behind every layer of cache](https://duthaho.dev/caching-is-never-free/) <sub>· Jul 1, 2026</sub>
 - [From monolith to idempotency:: one thread, not six flashcards](https://duthaho.dev/from-monolith-to-idempotency/) <sub>· Jun 30, 2026</sub>
 - [Two workers: inside the AI machine](https://duthaho.dev/ai-inference-engineering/) <sub>· Jun 18, 2026</sub>
-- [Nine questions I now always ask: when I go into an interview](https://duthaho.dev/questions-i-ask-in-interviews/) <sub>· Jun 16, 2026</sub>
 
 → Archive at [duthaho.dev](https://duthaho.dev)
 
@@ -49,4 +49,4 @@ I design systems that scale — and the teams that ship them. Twelve years from 
 
 ---
 
-<sub>Auto-refreshed Sunday, October 25 at 09:00 AM (ICT) · [source](https://github.com/duthaho/duthaho/blob/main/main.mustache) · career architecture at [duthaho.github.io](https://duthaho.github.io)</sub>
+<sub>Auto-refreshed Sunday, November 1 at 09:52 AM (ICT) · [source](https://github.com/duthaho/duthaho/blob/main/main.mustache) · career architecture at [duthaho.github.io](https://duthaho.github.io)</sub>
